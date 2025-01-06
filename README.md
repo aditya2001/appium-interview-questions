@@ -49,3 +49,25 @@ Communication channel between the client and the Appium server.
 The session is started once the client requests to start a session with the Appium server and receives a session ID in return.
 
 The client asks the Appium server to perform various tasks during the session, including opening the application, interacting with UI elements, taking screenshots, and other operations.
+
+### 7. Locators in Appium - @AndroidFindBy and @iOSXCUITFindBy
+In the page object model, we define locators for an element for both the platforms. First we create a page and using appium inspector, identify locators for android and ios. 
+Then, define them using @AndroidFindBy and @iOSXCUITFindBy respectively.
+
+
+### 8. Mobile Gestures in Appium
+In Appium, mobile gestures refer to the actions that users perform on their mobile devices by touching or swiping the screen. Appium supports a variety of mobile gestures that can be used to automate mobile testing, including:
+
+Long press — A tap and hold on the screen for a specified duration.
+Swipe — A single swipe in any direction on the screen.
+Scroll - This gesture is used to simulate a scroll action on the mobile device
+Tap — A single tap on the screen.
+Double tap — Two quick taps on the screen.
+Pinch — A two-finger gesture used to zoom in or out.
+Zoom — A two-finger gesture used to magnify or reduce the size of the content.
+Drag and drop — Moving an object on the screen by dragging it with one finger and dropping it at a new location.
+
+```java
+mobile:clickGesture -> This gesture performs click action on the given element.
+driver.executeScript("mobile: clickGesture", ImmutableMap.of( "elementId", ((RemoteWebElement) element).getId() ));
+```
