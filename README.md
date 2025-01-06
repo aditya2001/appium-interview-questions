@@ -58,6 +58,7 @@ Then, define them using @AndroidFindBy and @iOSXCUITFindBy respectively.
 ### 8. Mobile Gestures in Appium
 In Appium, mobile gestures refer to the actions that users perform on their mobile devices by touching or swiping the screen. Appium supports a variety of mobile gestures that can be used to automate mobile testing, including:
 
+```java
 Long press — A tap and hold on the screen for a specified duration.
 Swipe — A single swipe in any direction on the screen.
 Scroll - This gesture is used to simulate a scroll action on the mobile device
@@ -66,6 +67,7 @@ Double tap — Two quick taps on the screen.
 Pinch — A two-finger gesture used to zoom in or out.
 Zoom — A two-finger gesture used to magnify or reduce the size of the content.
 Drag and drop — Moving an object on the screen by dragging it with one finger and dropping it at a new location.
+```
 
 ```java
 mobile:clickGesture -> This gesture performs click action on the given element.
